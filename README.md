@@ -19,10 +19,10 @@ O programa usa a biblioteca `threading` do Python para executar verificações d
 - Threads e eventos de parada
 - Tratamento de exceções
 
-## Exemplo
-
-![image](https://user-images.githubusercontent.com/50200471/230754162-50cfa742-94c8-48b5-beb9-078f5b7f7c8c.png)
-![image](https://user-images.githubusercontent.com/50200471/230754175-88a080bd-6cbb-4b05-9e61-452ecc0feb51.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50200471/230754162-50cfa742-94c8-48b5-beb9-078f5b7f7c8c.png" width="350" title="hover text">
+  <img src="https://user-images.githubusercontent.com/50200471/230754175-88a080bd-6cbb-4b05-9e61-452ecc0feb51.png" width="350" alt="accessibility text">
+</p
 
 
 ## Como usar
