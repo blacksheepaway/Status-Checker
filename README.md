@@ -1,43 +1,38 @@
-# Verificador de Status do Servidor
+# Encurtador de URL
 
-Este é um  programa Python que verifica o status de um servidor da web e envia alertas caso ele esteja indisponível. Ele também inclui recursos para verificação manual e periódica do status do servidor.
+Este projeto é um encurtador de URL simples e eficiente que permite aos usuários encurtar URLs longas usando o serviço TinyURL e copiar o resultado para a área de transferência do sistema. A aplicação foi desenvolvida em Python com o auxílio das bibliotecas pyshorteners e tkinter.
+
+## Tecnologias e Conceitos
+
+- Python
+- Biblioteca pyshorteners para interagir com serviços de encurtamento de URL
+- Biblioteca tkinter para criar interfaces gráficas
+- GUI (Interface Gráfica do Usuário) usando a biblioteca tkinter
+- APIs de encurtamento de URL com a biblioteca pyshorteners
 
 ## Como funciona
 
-O programa usa a biblioteca `requests` do Python para enviar solicitações HTTP para o servidor especificado e verificar se ele está respondendo com sucesso. Se o servidor estiver inativo, o programa exibe um alerta na tela para notificar o usuário.
+- O usuário insere a URL longa no campo de entrada.
+- Ao clicar no botão “Encurtar URL”, a aplicação chama a função shorten_url.
+- A função shorten_url usa a biblioteca pyshorteners para gerar uma URL encurtada usando o serviço TinyURL.
+- A URL encurtada é exibida em um rótulo abaixo do campo de entrada.
+- O usuário pode clicar no botão “Copiar URL” para copiar a URL encurtada para a área de transferência do sistema.
 
-O programa possui uma GUI criada com a biblioteca `PySimpleGUI`, que permite ao usuário inserir a URL do servidor a ser verificado, iniciar uma verificação manual e agendar verificações automáticas em intervalos de tempo especificados.
+## Exemplo
 
-O programa usa a biblioteca `threading` do Python para executar verificações de status do servidor em segundo plano em intervalos regulares de tempo. Ele também usa a biblioteca `time` para aguardar o intervalo de tempo especificado antes de iniciar a próxima verificação.
-
-## Tecnologias e conceitos utilizados
-
-- Python
-- Bibliotecas: `requests`, `PySimpleGUI`, `threading`
-- GUI
-- Verificação manual e periódica do status do servidor
-- Threads e eventos de parada
-- Tratamento de exceções
-
-<h2>Exemplo</h2>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/50200471/230754162-50cfa742-94c8-48b5-beb9-078f5b7f7c8c.png" width="350" title="hover text">
   <img src="https://user-images.githubusercontent.com/50200471/230754175-88a080bd-6cbb-4b05-9e61-452ecc0feb51.png" width="350" alt="accessibility text">
-</p
+</p>
 
+## Modificações e aplicações úteis
 
-## Como usar
+Este projeto pode ser adaptado para diversas aplicações. Algumas modificações possíveis incluem:
 
-1. Clone ou baixe este repositório para o seu computador.
-2. Instale as bibliotecas necessárias (PySimpleGUI e requests) usando o pip: `pip install PySimpleGUI requests`
-3. Abra o arquivo `statuschecker.py` em um editor de código.
-4. Execute o arquivo a partir do terminal ou prompt de comando: `python statuschecker.py`
-5. Baixe o programa .exe em Releases para verificação contínua
-
-## Como contribuir
-
-Sinta-se à vontade para contribuir com este projeto, fazendo um fork deste repositório e enviando um pull request com suas alterações.
+- Suportar outros serviços de encurtamento de URL, como bit.ly ou goo.gl, simplesmente modificando a chamada à biblioteca pyshorteners.
+- Implementar recursos adicionais, como histórico de URLs encurtadas ou compartilhamento direto do resultado nas redes sociais.
+- Integrar a funcionalidade de encurtamento de URL em outras aplicações ou sistemas.
+- Contribuição Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue no GitHub ou enviar um pull request com suas sugestões e melhorias. Por favor, siga as diretrizes de contribuição e o código de conduta do projeto.
 
 ## Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
+Este projeto está licenciado sob a Licença MIT que permite o uso, cópia, modificação e distribuição livre do código-fonte, desde que a licença original seja incluída e os direitos autorais sejam respeitados.
