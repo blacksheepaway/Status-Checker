@@ -1,4 +1,4 @@
-# Release v1.0.0
+# Verificador de Status
 
 Esta é a primeira versão do meu projeto de verificador de status em forma executável. Esta versão inclui uma GUI que permite ao usuário inserir a URL do servidor a ser verificado, iniciar uma verificação manual e agendar verificações automáticas em intervalos de tempo específicos. O programa também exibe alertas na tela caso o servidor esteja indisponível.
 
