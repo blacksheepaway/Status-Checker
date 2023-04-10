@@ -1,22 +1,12 @@
-# Encurtador de URL
+# Release v1.0.0
 
-Este projeto é um encurtador de URL simples e eficiente que permite aos usuários encurtar URLs longas usando o serviço TinyURL e copiar o resultado para a área de transferência do sistema. A aplicação foi desenvolvida em Python com o auxílio das bibliotecas pyshorteners e tkinter.
+Esta é a primeira versão do meu projeto de verificador de status em forma executável. Esta versão inclui uma GUI que permite ao usuário inserir a URL do servidor a ser verificado, iniciar uma verificação manual e agendar verificações automáticas em intervalos de tempo específicos. O programa também exibe alertas na tela caso o servidor esteja indisponível.
 
-## Tecnologias e Conceitos
+## Características
 
-- Python
-- Biblioteca pyshorteners para interagir com serviços de encurtamento de URL
-- Biblioteca tkinter para criar interfaces gráficas
-- GUI (Interface Gráfica do Usuário) usando a biblioteca tkinter
-- APIs de encurtamento de URL com a biblioteca pyshorteners
-
-## Como funciona
-
-- O usuário insere a URL longa no campo de entrada.
-- Ao clicar no botão “Encurtar URL”, a aplicação chama a função shorten_url.
-- A função shorten_url usa a biblioteca pyshorteners para gerar uma URL encurtada usando o serviço TinyURL.
-- A URL encurtada é exibida em um rótulo abaixo do campo de entrada.
-- O usuário pode clicar no botão “Copiar URL” para copiar a URL encurtada para a área de transferência do sistema.
+- Verificação manual e periódica do status do servidor
+- Interface gráfica
+- Exibição de alertas na tela em caso de falha no servidor
 
 ## Exemplo
 
@@ -25,14 +15,22 @@ Este projeto é um encurtador de URL simples e eficiente que permite aos usuári
   <img src="https://user-images.githubusercontent.com/50200471/230754175-88a080bd-6cbb-4b05-9e61-452ecc0feb51.png" width="350" alt="accessibility text">
 </p>
 
-## Modificações e aplicações úteis
+## Como usar
 
-Este projeto pode ser adaptado para diversas aplicações. Algumas modificações possíveis incluem:
+1. Baixe o arquivo `statuschecker.exe` do release mais recente.
+2. Execute o arquivo a partir do seu computador.
+3. Insira a URL do servidor a ser verificado.
+4. Clique em "Check Now" para verificar o status do servidor imediatamente ou clique em "Schedule automatic server status checks" para agendar verificações automáticas em intervalos regulares de tempo.
+5. Em caso de falha no servidor, um alerta será exibido na tela.
 
-- Suportar outros serviços de encurtamento de URL, como bit.ly ou goo.gl, simplesmente modificando a chamada à biblioteca pyshorteners.
-- Implementar recursos adicionais, como histórico de URLs encurtadas ou compartilhamento direto do resultado nas redes sociais.
-- Integrar a funcionalidade de encurtamento de URL em outras aplicações ou sistemas.
-- Contribuição Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue no GitHub ou enviar um pull request com suas sugestões e melhorias. Por favor, siga as diretrizes de contribuição e o código de conduta do projeto.
+## Requisitos
+
+- Windows
+
+## Como contribuir
+
+Sinta-se à vontade para contribuir com este projeto, fazendo um fork deste repositório e enviando um pull request com suas alterações.
 
 ## Licença
+
 Este projeto está licenciado sob a Licença MIT que permite o uso, cópia, modificação e distribuição livre do código-fonte, desde que a licença original seja incluída e os direitos autorais sejam respeitados.
